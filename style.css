@@ -1,0 +1,100 @@
+
+section [class^="container"]{
+    padding: 4rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+    section [class^="container"]{
+        padding: 4rem;
+    }
+    nav [class^="container"]{
+        padding: 0 4rem;
+    }
+}
+section:not(:first-of-type){
+    text-align: center;
+}
+section:nth-child(2n){
+    background-color: #ecf2ff;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    transition: all 0.5s;
+}
+.navbar {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-link :hover {
+    color: green;
+    font-size: 1.1rem;
+}
+.navbar-nav .nav-item {
+    padding: 0 1rem;
+}
+@media screen and (min-width: 1024px) {
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+}
+
+
+section.hero{
+    background-color: #ecf2ff;
+    padding-top: 72px;
+}
+@media screen and (min-width: 576px) {
+    section.hero {
+        text-align: center;
+    }
+    section.hero img{
+        width: 70%;
+    }
+}
+
+section.skills i{
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid black;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .card{
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    max-width: 22rem;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 1024px){
+    section.about .container{
+    width: 60%;
+    }
+}
+
+section.contact .social-media a{
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px;
+    color: green;
+}
